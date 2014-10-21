@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -30,6 +31,7 @@
                             <constraint firstAttribute="trailing" secondItem="N3J-xF-Lvf" secondAttribute="trailing" id="H0t-Ye-GSa"/>
                             <constraint firstItem="WV2-l9-v46" firstAttribute="top" secondItem="cY2-2T-nO2" secondAttribute="bottom" id="KRS-dW-QKe"/>
                             <constraint firstItem="BVI-9p-qTR" firstAttribute="top" secondItem="N3J-xF-Lvf" secondAttribute="bottom" id="Or2-7x-XOm"/>
+                            <constraint firstItem="WV2-l9-v46" firstAttribute="height" relation="lessThanOrEqual" secondItem="tcD-KZ-FWh" secondAttribute="height" multiplier="0.4" id="QUb-ci-3B1"/>
                             <constraint firstItem="N3J-xF-Lvf" firstAttribute="top" secondItem="WV2-l9-v46" secondAttribute="bottom" constant="20" id="Z49-mC-ePd"/>
                             <constraint firstAttribute="centerX" secondItem="WV2-l9-v46" secondAttribute="centerX" id="rCo-4i-7Xt"/>
                         </constraints>
