@@ -16,15 +16,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WV2-l9-v46">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WV2-l9-v46">
                                 <rect key="frame" x="150" y="20" width="300" height="265"/>
                             </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N3J-xF-Lvf" userLabel="TextContainer">
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N3J-xF-Lvf" userLabel="TextContainer">
                                 <rect key="frame" x="150" y="315" width="300" height="265"/>
                                 <color key="backgroundColor" red="0.2156862745" green="0.50196078430000002" blue="0.72941176470000002" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.29019607843137252" green="0.6705882352941176" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="WV2-l9-v46" firstAttribute="top" secondItem="cY2-2T-nO2" secondAttribute="bottom" id="KRS-dW-QKe"/>
+                            <constraint firstItem="N3J-xF-Lvf" firstAttribute="top" secondItem="WV2-l9-v46" secondAttribute="bottom" constant="30" id="Z49-mC-ePd"/>
+                            <constraint firstAttribute="centerX" secondItem="WV2-l9-v46" secondAttribute="centerX" id="rCo-4i-7Xt"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="view" destination="tcD-KZ-FWh" id="csG-Al-jsR"/>
